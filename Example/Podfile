@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyOptions_Example' do
+  pod 'EasyOptions', :path => '../'
+
+  target 'EasyOptions_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
