@@ -1,0 +1,6 @@
+framework module Pods_EasyOptions_Tests {
+  umbrella header "Pods-EasyOptions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
