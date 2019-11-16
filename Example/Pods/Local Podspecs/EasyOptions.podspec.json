@@ -1,7 +1,7 @@
 {
   "name": "EasyOptions",
   "version": "0.1.0",
-  "summary": "A short description of EasyOptions.",
+  "summary": "A easy to use bottom slide up option menu.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/kasimok/EasyOptions",
   "license": {
@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "kasimok": "evilisn_jiang@trendmicro.com"
+    "kasimok": "kasimok@163.com"
   },
   "source": {
     "git": "https://github.com/kasimok/EasyOptions.git",
@@ -18,5 +18,8 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "EasyOptions/Classes/**/*"
+  "source_files": "EasyOptions/Classes/**/*",
+  "frameworks": "UIKit",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
 }
