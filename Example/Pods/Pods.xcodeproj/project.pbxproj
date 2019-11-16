@@ -38,6 +38,17 @@
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */; };
 		EF22C986482988A3BCEF72474553D814 /* Pods-EasyOptions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BC028B189C26D55B60C22C724D6FA0 /* Pods-EasyOptions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F25B891C238001F300B1EF16 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */; };
+		F25B891D238001F300B1EF16 /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */; };
+		F25B891E238001F300B1EF16 /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */; };
+		F25B891F238001F300B1EF16 /* HalfModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */; };
+		F25B89252380020B00B1EF16 /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89212380020B00B1EF16 /* OptionHeaderView.swift */; };
+		F25B89262380020B00B1EF16 /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25B89222380020B00B1EF16 /* OptionHeaderView.xib */; };
+		F25B89272380020B00B1EF16 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */; };
+		F25B89282380020B00B1EF16 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */; };
+		F25B892A2380021E00B1EF16 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89292380021E00B1EF16 /* Protocols.swift */; };
+		F25B892C2380022F00B1EF16 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */; };
+		F25B892E2380023900B1EF16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892D2380023900B1EF16 /* Extensions.swift */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -69,7 +80,7 @@
 		07DCAFBBF8F71A0EFE53AA662B319534 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		0C5A9AA22AE6F697F8E54ED5B29333F5 /* Pods-EasyOptions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyOptions_Example.modulemap"; sourceTree = "<group>"; };
-		0F524829342FEEB30232F869423F940A /* EasyOptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyOptions.framework; path = EasyOptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F524829342FEEB30232F869423F940A /* EasyOptions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyOptions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF18871118CA24B72CD9B2D58E1799B /* Pods-EasyOptions_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyOptions_Example-Info.plist"; sourceTree = "<group>"; };
 		12BC18F3943C3494957ECD07124E9994 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
@@ -80,28 +91,28 @@
 		36C581792BA5BCA6A02F0245195AEED7 /* EasyOptions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyOptions-dummy.m"; sourceTree = "<group>"; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		3FA6ECA595B31CE7B36E95769E2DF831 /* EasyOptions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EasyOptions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3FA6ECA595B31CE7B36E95769E2DF831 /* EasyOptions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EasyOptions.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		40128D5A44651182BE6D8C30B8271748 /* Pods-EasyOptions_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyOptions_Tests-dummy.m"; sourceTree = "<group>"; };
 		407276F6D3A4F6FECFD411AE8E927C63 /* Pods-EasyOptions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyOptions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		418E0471655A8CDB5EB2C290498D2FD3 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
 		51605E6DAAAC076A32E4E12DC6038952 /* Pods-EasyOptions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyOptions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		553D46B99BEFCFC30FCD11FB6A030304 /* EasyOptions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyOptions.modulemap; sourceTree = "<group>"; };
 		5694BBF99B3DC64C3AAB33BB6929672D /* Pods-EasyOptions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyOptions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C501573F17D4085E9D7186D1B86EDC6 /* Pods_EasyOptions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyOptions_Example.framework; path = "Pods-EasyOptions_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C501573F17D4085E9D7186D1B86EDC6 /* Pods_EasyOptions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyOptions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66F4263CA2F90AB7F5A11F8DF9F7F0C4 /* Pods-EasyOptions_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyOptions_Example-frameworks.sh"; sourceTree = "<group>"; };
-		695D74F2040FCC4A4382D6AC8D27DDD1 /* Pods_EasyOptions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyOptions_Tests.framework; path = "Pods-EasyOptions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		695D74F2040FCC4A4382D6AC8D27DDD1 /* Pods_EasyOptions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyOptions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		746CC9C9E1B0E104CD1BA120C69A2526 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		815E70296966FB4DC048F5EDA9CBE62A /* EasyOptions-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyOptions-Info.plist"; sourceTree = "<group>"; };
 		82D2DF1ABBBD85F5E079D7D0EB5479BC /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		88DF0C1BA839426B9BC6F3DBB77C94C1 /* Pods-EasyOptions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyOptions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		89FFE8A1534DBD0D2F6FCD11AA55D8C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		89FFE8A1534DBD0D2F6FCD11AA55D8C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8D3BC61750C2318DABDE8E91A8BC1747 /* EasyOptions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyOptions.xcconfig; sourceTree = "<group>"; };
 		8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		972AA9943CA4EE16745404F60BE09172 /* Pods-EasyOptions_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyOptions_Tests-Info.plist"; sourceTree = "<group>"; };
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		A41C09CCD87BA0271D8402C7DEAEC1E9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = EasyOptions/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		AA172EA1A198EEFBE0794EACF7993C02 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
@@ -122,8 +133,19 @@
 		E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
+		F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
+		F25B89212380020B00B1EF16 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
+		F25B89222380020B00B1EF16 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
+		F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		F25B89292380021E00B1EF16 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
+		F25B892D2380023900B1EF16 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,7 +251,6 @@
 				45E4BEB48F67ECE4946F86A2669DF19F /* Support Files */,
 				820C839EC049005CB82FAAF13AFDCB95 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -282,6 +303,11 @@
 		BD585F566F53392D42B4465F3D31033D /* EasyOptions */ = {
 			isa = PBXGroup;
 			children = (
+				F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */,
+				F25B892D2380023900B1EF16 /* Extensions.swift */,
+				F25B89292380021E00B1EF16 /* Protocols.swift */,
+				F25B89202380020200B1EF16 /* Views */,
+				F25B8917238001F300B1EF16 /* ModalTransition */,
 				A41C09CCD87BA0271D8402C7DEAEC1E9 /* ReplaceMe.swift */,
 				BD9AC30982067838FBE234C6AD82878A /* Pod */,
 				CD63A79D63979367E6F8456AD91A2760 /* Support Files */,
@@ -343,6 +369,28 @@
 				92B9827D134822FECA2FBE88A0585CBA /* FBSnapshotTestCase */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F25B8917238001F300B1EF16 /* ModalTransition */ = {
+			isa = PBXGroup;
+			children = (
+				F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */,
+				F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */,
+				F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */,
+				F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */,
+			);
+			path = ModalTransition;
+			sourceTree = "<group>";
+		};
+		F25B89202380020200B1EF16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F25B89212380020B00B1EF16 /* OptionHeaderView.swift */,
+				F25B89222380020B00B1EF16 /* OptionHeaderView.xib */,
+				F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */,
+				F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F47A836774CE51BB8AE4F2A0BEB220CD /* iOS */ = {
@@ -518,6 +566,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25B89282380020B00B1EF16 /* OptionsTableViewCell.xib in Resources */,
+				F25B89262380020B00B1EF16 /* OptionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,8 +600,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25B891D238001F300B1EF16 /* HalfModalInteractiveTransition.swift in Sources */,
+				F25B89252380020B00B1EF16 /* OptionHeaderView.swift in Sources */,
 				16B994EA548693D8FB57341DAD35BBE7 /* EasyOptions-dummy.m in Sources */,
+				F25B892A2380021E00B1EF16 /* Protocols.swift in Sources */,
+				F25B892C2380022F00B1EF16 /* EZOptionsViewController.swift in Sources */,
 				603B64923EEF6491688D4A193D991337 /* ReplaceMe.swift in Sources */,
+				F25B89272380020B00B1EF16 /* OptionsTableViewCell.swift in Sources */,
+				F25B891E238001F300B1EF16 /* HalfModalTransitionAnimator.swift in Sources */,
+				F25B891C238001F300B1EF16 /* HalfModalPresentationController.swift in Sources */,
+				F25B892E2380023900B1EF16 /* Extensions.swift in Sources */,
+				F25B891F238001F300B1EF16 /* HalfModalTransitioningDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +678,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyOptions/EasyOptions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyOptions/EasyOptions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EasyOptions/EasyOptions.modulemap";
 				PRODUCT_MODULE_NAME = EasyOptions;
@@ -683,7 +742,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyOptions/EasyOptions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyOptions/EasyOptions-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EasyOptions/EasyOptions.modulemap";
 				PRODUCT_MODULE_NAME = EasyOptions;
@@ -851,8 +910,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
