@@ -49,6 +49,7 @@
 		F25B892A2380021E00B1EF16 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89292380021E00B1EF16 /* Protocols.swift */; };
 		F25B892C2380022F00B1EF16 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */; };
 		F25B892E2380023900B1EF16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892D2380023900B1EF16 /* Extensions.swift */; };
+		F25B8930238003ED00B1EF16 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25B892F238003ED00B1EF16 /* Media.xcassets */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		F25B89292380021E00B1EF16 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
 		F25B892D2380023900B1EF16 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F25B892F238003ED00B1EF16 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -303,6 +305,7 @@
 		BD585F566F53392D42B4465F3D31033D /* EasyOptions */ = {
 			isa = PBXGroup;
 			children = (
+				F25B892F238003ED00B1EF16 /* Media.xcassets */,
 				F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */,
 				F25B892D2380023900B1EF16 /* Extensions.swift */,
 				F25B89292380021E00B1EF16 /* Protocols.swift */,
@@ -567,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25B89282380020B00B1EF16 /* OptionsTableViewCell.xib in Resources */,
+				F25B8930238003ED00B1EF16 /* Media.xcassets in Resources */,
 				F25B89262380020B00B1EF16 /* OptionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
