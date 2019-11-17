@@ -37,20 +37,18 @@
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */; };
 		EF22C986482988A3BCEF72474553D814 /* Pods-EasyOptions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BC028B189C26D55B60C22C724D6FA0 /* Pods-EasyOptions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F22763772380E09500CED29E /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763642380E09500CED29E /* HalfModalPresentationController.swift */; };
-		F22763782380E09500CED29E /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763652380E09500CED29E /* HalfModalInteractiveTransition.swift */; };
-		F22763792380E09500CED29E /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763662380E09500CED29E /* HalfModalTransitionAnimator.swift */; };
-		F227637A2380E09500CED29E /* HalfModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763672380E09500CED29E /* HalfModalTransitioningDelegate.swift */; };
-		F227637B2380E09500CED29E /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F22763692380E09500CED29E /* Media.xcassets */; };
-		F227637C2380E09500CED29E /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = F227636C2380E09500CED29E /* .gitkeep */; };
-		F227637D2380E09500CED29E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227636D2380E09500CED29E /* ReplaceMe.swift */; };
-		F227637E2380E09500CED29E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F227636F2380E09500CED29E /* Extensions.swift */; };
-		F227637F2380E09500CED29E /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763702380E09500CED29E /* EZOptionsViewController.swift */; };
-		F22763802380E09500CED29E /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763712380E09500CED29E /* Protocols.swift */; };
-		F22763812380E09500CED29E /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763732380E09500CED29E /* OptionHeaderView.swift */; };
-		F22763822380E09500CED29E /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22763742380E09500CED29E /* OptionsTableViewCell.swift */; };
-		F22763832380E09500CED29E /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22763752380E09500CED29E /* OptionsTableViewCell.xib */; };
-		F22763842380E09500CED29E /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22763762380E09500CED29E /* OptionHeaderView.xib */; };
+		F2B2CB8C2380E2BE00D1F3A5 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB7C2380E2BE00D1F3A5 /* EZOptionsViewController.swift */; };
+		F2B2CB8D2380E2BE00D1F3A5 /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB7E2380E2BE00D1F3A5 /* OptionHeaderView.swift */; };
+		F2B2CB8E2380E2BE00D1F3A5 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB7F2380E2BE00D1F3A5 /* OptionsTableViewCell.swift */; };
+		F2B2CB8F2380E2BE00D1F3A5 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B2CB802380E2BE00D1F3A5 /* OptionsTableViewCell.xib */; };
+		F2B2CB902380E2BE00D1F3A5 /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B2CB812380E2BE00D1F3A5 /* OptionHeaderView.xib */; };
+		F2B2CB912380E2BE00D1F3A5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB832380E2BE00D1F3A5 /* Extensions.swift */; };
+		F2B2CB922380E2BE00D1F3A5 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB842380E2BE00D1F3A5 /* Protocols.swift */; };
+		F2B2CB932380E2BE00D1F3A5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B2CB862380E2BE00D1F3A5 /* Media.xcassets */; };
+		F2B2CB942380E2BE00D1F3A5 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB882380E2BE00D1F3A5 /* HalfModalPresentationController.swift */; };
+		F2B2CB952380E2BE00D1F3A5 /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB892380E2BE00D1F3A5 /* HalfModalInteractiveTransition.swift */; };
+		F2B2CB962380E2BE00D1F3A5 /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB8A2380E2BE00D1F3A5 /* HalfModalTransitionAnimator.swift */; };
+		F2B2CB972380E2BE00D1F3A5 /* HalfModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B2CB8B2380E2BE00D1F3A5 /* HalfModalTransitioningDelegate.swift */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -134,20 +132,18 @@
 		E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		F22763642380E09500CED29E /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
-		F22763652380E09500CED29E /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
-		F22763662380E09500CED29E /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
-		F22763672380E09500CED29E /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
-		F22763692380E09500CED29E /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		F227636C2380E09500CED29E /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		F227636D2380E09500CED29E /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
-		F227636F2380E09500CED29E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F22763702380E09500CED29E /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
-		F22763712380E09500CED29E /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		F22763732380E09500CED29E /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
-		F22763742380E09500CED29E /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
-		F22763752380E09500CED29E /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
-		F22763762380E09500CED29E /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
+		F2B2CB7C2380E2BE00D1F3A5 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EZOptionsViewController.swift; path = Sources/EasyOptions/Classes/EZOptionsViewController.swift; sourceTree = "<group>"; };
+		F2B2CB7E2380E2BE00D1F3A5 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
+		F2B2CB7F2380E2BE00D1F3A5 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		F2B2CB802380E2BE00D1F3A5 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		F2B2CB812380E2BE00D1F3A5 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
+		F2B2CB832380E2BE00D1F3A5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F2B2CB842380E2BE00D1F3A5 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Sources/EasyOptions/Classes/Protocols.swift; sourceTree = "<group>"; };
+		F2B2CB862380E2BE00D1F3A5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F2B2CB882380E2BE00D1F3A5 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
+		F2B2CB892380E2BE00D1F3A5 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		F2B2CB8A2380E2BE00D1F3A5 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		F2B2CB8B2380E2BE00D1F3A5 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
 		F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -307,6 +303,12 @@
 		BD585F566F53392D42B4465F3D31033D /* EasyOptions */ = {
 			isa = PBXGroup;
 			children = (
+				F2B2CB822380E2BE00D1F3A5 /* Extensions */,
+				F2B2CB7C2380E2BE00D1F3A5 /* EZOptionsViewController.swift */,
+				F2B2CB872380E2BE00D1F3A5 /* Modal Transition */,
+				F2B2CB842380E2BE00D1F3A5 /* Protocols.swift */,
+				F2B2CB852380E2BE00D1F3A5 /* Resources */,
+				F2B2CB7D2380E2BE00D1F3A5 /* Views */,
 				BD9AC30982067838FBE234C6AD82878A /* Pod */,
 				CD63A79D63979367E6F8456AD91A2760 /* Support Files */,
 			);
@@ -317,7 +319,6 @@
 		BD9AC30982067838FBE234C6AD82878A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F22763622380E09500CED29E /* Sources */,
 				3FA6ECA595B31CE7B36E95769E2DF831 /* EasyOptions.podspec */,
 				F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */,
 				89FFE8A1534DBD0D2F6FCD11AA55D8C6 /* README.md */,
@@ -370,73 +371,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F22763622380E09500CED29E /* Sources */ = {
+		F2B2CB7D2380E2BE00D1F3A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F22763632380E09500CED29E /* Modal Transition */,
-				F22763682380E09500CED29E /* Resources */,
-				F227636A2380E09500CED29E /* EasyOptions */,
-				F227636E2380E09500CED29E /* Extensions */,
-				F22763702380E09500CED29E /* EZOptionsViewController.swift */,
-				F22763712380E09500CED29E /* Protocols.swift */,
-				F22763722380E09500CED29E /* Views */,
+				F2B2CB7E2380E2BE00D1F3A5 /* OptionHeaderView.swift */,
+				F2B2CB7F2380E2BE00D1F3A5 /* OptionsTableViewCell.swift */,
+				F2B2CB802380E2BE00D1F3A5 /* OptionsTableViewCell.xib */,
+				F2B2CB812380E2BE00D1F3A5 /* OptionHeaderView.xib */,
 			);
-			path = Sources;
+			name = Views;
+			path = Sources/EasyOptions/Classes/Views;
 			sourceTree = "<group>";
 		};
-		F22763632380E09500CED29E /* Modal Transition */ = {
+		F2B2CB822380E2BE00D1F3A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F22763642380E09500CED29E /* HalfModalPresentationController.swift */,
-				F22763652380E09500CED29E /* HalfModalInteractiveTransition.swift */,
-				F22763662380E09500CED29E /* HalfModalTransitionAnimator.swift */,
-				F22763672380E09500CED29E /* HalfModalTransitioningDelegate.swift */,
+				F2B2CB832380E2BE00D1F3A5 /* Extensions.swift */,
 			);
-			path = "Modal Transition";
+			name = Extensions;
+			path = Sources/EasyOptions/Classes/Extensions;
 			sourceTree = "<group>";
 		};
-		F22763682380E09500CED29E /* Resources */ = {
+		F2B2CB852380E2BE00D1F3A5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F22763692380E09500CED29E /* Media.xcassets */,
+				F2B2CB862380E2BE00D1F3A5 /* Media.xcassets */,
 			);
-			path = Resources;
+			name = Resources;
+			path = Sources/EasyOptions/Classes/Resources;
 			sourceTree = "<group>";
 		};
-		F227636A2380E09500CED29E /* EasyOptions */ = {
+		F2B2CB872380E2BE00D1F3A5 /* Modal Transition */ = {
 			isa = PBXGroup;
 			children = (
-				F227636B2380E09500CED29E /* Classes */,
+				F2B2CB882380E2BE00D1F3A5 /* HalfModalPresentationController.swift */,
+				F2B2CB892380E2BE00D1F3A5 /* HalfModalInteractiveTransition.swift */,
+				F2B2CB8A2380E2BE00D1F3A5 /* HalfModalTransitionAnimator.swift */,
+				F2B2CB8B2380E2BE00D1F3A5 /* HalfModalTransitioningDelegate.swift */,
 			);
-			path = EasyOptions;
-			sourceTree = "<group>";
-		};
-		F227636B2380E09500CED29E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F227636C2380E09500CED29E /* .gitkeep */,
-				F227636D2380E09500CED29E /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		F227636E2380E09500CED29E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F227636F2380E09500CED29E /* Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		F22763722380E09500CED29E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				F22763732380E09500CED29E /* OptionHeaderView.swift */,
-				F22763742380E09500CED29E /* OptionsTableViewCell.swift */,
-				F22763752380E09500CED29E /* OptionsTableViewCell.xib */,
-				F22763762380E09500CED29E /* OptionHeaderView.xib */,
-			);
-			path = Views;
+			name = "Modal Transition";
+			path = "Sources/EasyOptions/Classes/Modal Transition";
 			sourceTree = "<group>";
 		};
 		F47A836774CE51BB8AE4F2A0BEB220CD /* iOS */ = {
@@ -617,10 +591,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F227637B2380E09500CED29E /* Media.xcassets in Resources */,
-				F227637C2380E09500CED29E /* .gitkeep in Resources */,
-				F22763842380E09500CED29E /* OptionHeaderView.xib in Resources */,
-				F22763832380E09500CED29E /* OptionsTableViewCell.xib in Resources */,
+				F2B2CB902380E2BE00D1F3A5 /* OptionHeaderView.xib in Resources */,
+				F2B2CB932380E2BE00D1F3A5 /* Media.xcassets in Resources */,
+				F2B2CB8F2380E2BE00D1F3A5 /* OptionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,17 +626,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F227637D2380E09500CED29E /* ReplaceMe.swift in Sources */,
-				F227637A2380E09500CED29E /* HalfModalTransitioningDelegate.swift in Sources */,
-				F227637F2380E09500CED29E /* EZOptionsViewController.swift in Sources */,
-				F22763802380E09500CED29E /* Protocols.swift in Sources */,
-				F22763822380E09500CED29E /* OptionsTableViewCell.swift in Sources */,
-				F22763812380E09500CED29E /* OptionHeaderView.swift in Sources */,
-				F22763772380E09500CED29E /* HalfModalPresentationController.swift in Sources */,
+				F2B2CB952380E2BE00D1F3A5 /* HalfModalInteractiveTransition.swift in Sources */,
+				F2B2CB912380E2BE00D1F3A5 /* Extensions.swift in Sources */,
+				F2B2CB8E2380E2BE00D1F3A5 /* OptionsTableViewCell.swift in Sources */,
+				F2B2CB8C2380E2BE00D1F3A5 /* EZOptionsViewController.swift in Sources */,
+				F2B2CB922380E2BE00D1F3A5 /* Protocols.swift in Sources */,
+				F2B2CB972380E2BE00D1F3A5 /* HalfModalTransitioningDelegate.swift in Sources */,
+				F2B2CB962380E2BE00D1F3A5 /* HalfModalTransitionAnimator.swift in Sources */,
+				F2B2CB8D2380E2BE00D1F3A5 /* OptionHeaderView.swift in Sources */,
 				16B994EA548693D8FB57341DAD35BBE7 /* EasyOptions-dummy.m in Sources */,
-				F22763792380E09500CED29E /* HalfModalTransitionAnimator.swift in Sources */,
-				F22763782380E09500CED29E /* HalfModalInteractiveTransition.swift in Sources */,
-				F227637E2380E09500CED29E /* Extensions.swift in Sources */,
+				F2B2CB942380E2BE00D1F3A5 /* HalfModalPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
