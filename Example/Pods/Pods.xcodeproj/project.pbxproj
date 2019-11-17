@@ -124,18 +124,17 @@
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EAF5CC7EEE04243ACA496A0562F859B0 /* Pods-EasyOptions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyOptions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		F2B76BE12380E34D00085602 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		F2B76BE22380E34D00085602 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Sources/EasyOptions/Classes/Protocols.swift; sourceTree = "<group>"; };
-		F2B76BE32380E34D00085602 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EZOptionsViewController.swift; path = Sources/EasyOptions/Classes/EZOptionsViewController.swift; sourceTree = "<group>"; };
-		F2B76BE52380E34D00085602 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F2B76BE72380E34D00085602 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
-		F2B76BE82380E34D00085602 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
-		F2B76BE92380E34D00085602 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
-		F2B76BEA2380E34D00085602 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
-		F2B76BEC2380E34D00085602 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
-		F2B76BED2380E34D00085602 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
-		F2B76BEE2380E34D00085602 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
-		F2B76BEF2380E34D00085602 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
+		F26D535F2380E84C00F0E532 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
+		F26D53602380E84C00F0E532 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		F26D53612380E84C00F0E532 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		F26D53622380E84C00F0E532 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
+		F26D53652380E84C00F0E532 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F26D53662380E84C00F0E532 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
+		F26D53672380E84C00F0E532 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		F26D53692380E84C00F0E532 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
+		F26D536A2380E84C00F0E532 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		F26D536B2380E84C00F0E532 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		F26D536C2380E84C00F0E532 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,12 +188,6 @@
 		376AD594FF0932BD3BE602A616179850 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F2B76BE42380E34D00085602 /* Extensions */,
-				F2B76BE32380E34D00085602 /* EZOptionsViewController.swift */,
-				F2B76BEB2380E34D00085602 /* Modal Transition */,
-				F2B76BE22380E34D00085602 /* Protocols.swift */,
-				F2B76BE02380E34D00085602 /* Resources */,
-				F2B76BE62380E34D00085602 /* Views */,
 				840D21C713B0D32E77DFF09756E67ABB /* EasyOptions.podspec */,
 				5A70595C212AF966A7274B2180513A49 /* LICENSE */,
 				5B1BA18A10FAE4FFB5ABF17DCEDC8977 /* README.md */,
@@ -302,6 +295,7 @@
 		B9486B7970AFB946300FCD74583267A2 /* EasyOptions */ = {
 			isa = PBXGroup;
 			children = (
+				F26D535D2380E84C00F0E532 /* Classes */,
 				376AD594FF0932BD3BE602A616179850 /* Pod */,
 				BF3E540550F059F88E8B696D316E70BF /* Support Files */,
 			);
@@ -346,46 +340,47 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F2B76BE02380E34D00085602 /* Resources */ = {
+		F26D535D2380E84C00F0E532 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F2B76BE12380E34D00085602 /* Media.xcassets */,
+				F26D535E2380E84C00F0E532 /* Modal Transition */,
+				F26D53642380E84C00F0E532 /* Extensions */,
+				F26D53662380E84C00F0E532 /* EZOptionsViewController.swift */,
+				F26D53672380E84C00F0E532 /* Protocols.swift */,
+				F26D53682380E84C00F0E532 /* Views */,
 			);
-			name = Resources;
-			path = Sources/EasyOptions/Classes/Resources;
+			name = Classes;
+			path = Sources/Classes;
 			sourceTree = "<group>";
 		};
-		F2B76BE42380E34D00085602 /* Extensions */ = {
+		F26D535E2380E84C00F0E532 /* Modal Transition */ = {
 			isa = PBXGroup;
 			children = (
-				F2B76BE52380E34D00085602 /* Extensions.swift */,
+				F26D535F2380E84C00F0E532 /* HalfModalPresentationController.swift */,
+				F26D53602380E84C00F0E532 /* HalfModalInteractiveTransition.swift */,
+				F26D53612380E84C00F0E532 /* HalfModalTransitionAnimator.swift */,
+				F26D53622380E84C00F0E532 /* HalfModalTransitioningDelegate.swift */,
 			);
-			name = Extensions;
-			path = Sources/EasyOptions/Classes/Extensions;
+			path = "Modal Transition";
 			sourceTree = "<group>";
 		};
-		F2B76BE62380E34D00085602 /* Views */ = {
+		F26D53642380E84C00F0E532 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F2B76BE72380E34D00085602 /* OptionHeaderView.swift */,
-				F2B76BE82380E34D00085602 /* OptionsTableViewCell.swift */,
-				F2B76BE92380E34D00085602 /* OptionsTableViewCell.xib */,
-				F2B76BEA2380E34D00085602 /* OptionHeaderView.xib */,
+				F26D53652380E84C00F0E532 /* Extensions.swift */,
 			);
-			name = Views;
-			path = Sources/EasyOptions/Classes/Views;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F2B76BEB2380E34D00085602 /* Modal Transition */ = {
+		F26D53682380E84C00F0E532 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F2B76BEC2380E34D00085602 /* HalfModalPresentationController.swift */,
-				F2B76BED2380E34D00085602 /* HalfModalInteractiveTransition.swift */,
-				F2B76BEE2380E34D00085602 /* HalfModalTransitionAnimator.swift */,
-				F2B76BEF2380E34D00085602 /* HalfModalTransitioningDelegate.swift */,
+				F26D53692380E84C00F0E532 /* OptionHeaderView.swift */,
+				F26D536A2380E84C00F0E532 /* OptionsTableViewCell.swift */,
+				F26D536B2380E84C00F0E532 /* OptionsTableViewCell.xib */,
+				F26D536C2380E84C00F0E532 /* OptionHeaderView.xib */,
 			);
-			name = "Modal Transition";
-			path = "Sources/EasyOptions/Classes/Modal Transition";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		FD7556559D2724955A31CFFC9A57FBEF /* Products */ = {

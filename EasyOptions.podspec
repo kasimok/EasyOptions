@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'EasyOptions/Classes/**/*'
-  
+  s.source_files = 'Sources/Classes/**/*'
+
   # s.resource_bundles = {
   #   'EasyOptions' => ['EasyOptions/Assets/*.png']
   # }
@@ -39,7 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.frameworks = 'UIKit'
-  
+
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.swift_version = '5.0'
+  s.swift_version = ['5.0','5.1']
 end
