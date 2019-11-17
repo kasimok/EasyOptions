@@ -18,7 +18,6 @@
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		55FE309A4CABE18F24DE216509161245 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */; };
 		5C9D7A5B8E7759D6F3C658CA37246FC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BC18F3943C3494957ECD07124E9994 /* Foundation.framework */; };
-		603B64923EEF6491688D4A193D991337 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41C09CCD87BA0271D8402C7DEAEC1E9 /* ReplaceMe.swift */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DCAFBBF8F71A0EFE53AA662B319534 /* XCTest.framework */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */; };
@@ -38,18 +37,18 @@
 		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */; };
 		EF22C986482988A3BCEF72474553D814 /* Pods-EasyOptions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BC028B189C26D55B60C22C724D6FA0 /* Pods-EasyOptions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F25B891C238001F300B1EF16 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */; };
-		F25B891D238001F300B1EF16 /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */; };
-		F25B891E238001F300B1EF16 /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */; };
-		F25B891F238001F300B1EF16 /* HalfModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */; };
-		F25B89252380020B00B1EF16 /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89212380020B00B1EF16 /* OptionHeaderView.swift */; };
-		F25B89262380020B00B1EF16 /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25B89222380020B00B1EF16 /* OptionHeaderView.xib */; };
-		F25B89272380020B00B1EF16 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */; };
-		F25B89282380020B00B1EF16 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */; };
-		F25B892A2380021E00B1EF16 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B89292380021E00B1EF16 /* Protocols.swift */; };
-		F25B892C2380022F00B1EF16 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */; };
-		F25B892E2380023900B1EF16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B892D2380023900B1EF16 /* Extensions.swift */; };
-		F25B8930238003ED00B1EF16 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25B892F238003ED00B1EF16 /* Media.xcassets */; };
+		F2F9FC2A2380D73A00F60145 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC182380D73A00F60145 /* EZOptionsViewController.swift */; };
+		F2F9FC2E2380D73A00F60145 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC1E2380D73A00F60145 /* Protocols.swift */; };
+		F2F9FC2F2380D73A00F60145 /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC202380D73A00F60145 /* HalfModalPresentationController.swift */; };
+		F2F9FC302380D73A00F60145 /* HalfModalInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC212380D73A00F60145 /* HalfModalInteractiveTransition.swift */; };
+		F2F9FC312380D73A00F60145 /* HalfModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC222380D73A00F60145 /* HalfModalTransitionAnimator.swift */; };
+		F2F9FC322380D73A00F60145 /* HalfModalTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC232380D73A00F60145 /* HalfModalTransitioningDelegate.swift */; };
+		F2F9FC332380D73A00F60145 /* OptionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC252380D73A00F60145 /* OptionHeaderView.swift */; };
+		F2F9FC342380D73A00F60145 /* OptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC262380D73A00F60145 /* OptionsTableViewCell.swift */; };
+		F2F9FC352380D73A00F60145 /* OptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F9FC272380D73A00F60145 /* OptionsTableViewCell.xib */; };
+		F2F9FC362380D73A00F60145 /* OptionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2F9FC282380D73A00F60145 /* OptionHeaderView.xib */; };
+		F2F9FC3C2380D7B300F60145 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2F9FC3A2380D7B300F60145 /* Media.xcassets */; };
+		F2F9FC3E2380D7C400F60145 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F9FC3D2380D7C400F60145 /* Extensions.swift */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -115,7 +114,6 @@
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		A41C09CCD87BA0271D8402C7DEAEC1E9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = EasyOptions/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		AA172EA1A198EEFBE0794EACF7993C02 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		AD0B81AC7DF4855803A0FA70985F8A99 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		B3146720D65A390C43915192EBA80EB1 /* EasyOptions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyOptions-prefix.pch"; sourceTree = "<group>"; };
@@ -134,18 +132,18 @@
 		E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
 		EA718A72E676291836EBB46B85242155 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
-		F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
-		F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
-		F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
-		F25B89212380020B00B1EF16 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
-		F25B89222380020B00B1EF16 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
-		F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
-		F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
-		F25B89292380021E00B1EF16 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
-		F25B892D2380023900B1EF16 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		F25B892F238003ED00B1EF16 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F2F9FC182380D73A00F60145 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EZOptionsViewController.swift; path = Sources/EZOptionsViewController.swift; sourceTree = "<group>"; };
+		F2F9FC1E2380D73A00F60145 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Sources/Protocols.swift; sourceTree = "<group>"; };
+		F2F9FC202380D73A00F60145 /* HalfModalPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalPresentationController.swift; sourceTree = "<group>"; };
+		F2F9FC212380D73A00F60145 /* HalfModalInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalInteractiveTransition.swift; sourceTree = "<group>"; };
+		F2F9FC222380D73A00F60145 /* HalfModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		F2F9FC232380D73A00F60145 /* HalfModalTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HalfModalTransitioningDelegate.swift; sourceTree = "<group>"; };
+		F2F9FC252380D73A00F60145 /* OptionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionHeaderView.swift; sourceTree = "<group>"; };
+		F2F9FC262380D73A00F60145 /* OptionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsTableViewCell.swift; sourceTree = "<group>"; };
+		F2F9FC272380D73A00F60145 /* OptionsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionsTableViewCell.xib; sourceTree = "<group>"; };
+		F2F9FC282380D73A00F60145 /* OptionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionHeaderView.xib; sourceTree = "<group>"; };
+		F2F9FC3A2380D7B300F60145 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F2F9FC3D2380D7C400F60145 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F97D2FF608FFDB73D9998C5B86834AB1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -305,13 +303,12 @@
 		BD585F566F53392D42B4465F3D31033D /* EasyOptions */ = {
 			isa = PBXGroup;
 			children = (
-				F25B892F238003ED00B1EF16 /* Media.xcassets */,
-				F25B892B2380022F00B1EF16 /* EZOptionsViewController.swift */,
-				F25B892D2380023900B1EF16 /* Extensions.swift */,
-				F25B89292380021E00B1EF16 /* Protocols.swift */,
-				F25B89202380020200B1EF16 /* Views */,
-				F25B8917238001F300B1EF16 /* ModalTransition */,
-				A41C09CCD87BA0271D8402C7DEAEC1E9 /* ReplaceMe.swift */,
+				F2F9FC3B2380D7B300F60145 /* Extensions */,
+				F2F9FC392380D7B300F60145 /* Resources */,
+				F2F9FC182380D73A00F60145 /* EZOptionsViewController.swift */,
+				F2F9FC1F2380D73A00F60145 /* Modal Transition */,
+				F2F9FC1E2380D73A00F60145 /* Protocols.swift */,
+				F2F9FC242380D73A00F60145 /* Views */,
 				BD9AC30982067838FBE234C6AD82878A /* Pod */,
 				CD63A79D63979367E6F8456AD91A2760 /* Support Files */,
 			);
@@ -374,26 +371,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F25B8917238001F300B1EF16 /* ModalTransition */ = {
+		F2F9FC1F2380D73A00F60145 /* Modal Transition */ = {
 			isa = PBXGroup;
 			children = (
-				F25B8918238001F300B1EF16 /* HalfModalPresentationController.swift */,
-				F25B8919238001F300B1EF16 /* HalfModalInteractiveTransition.swift */,
-				F25B891A238001F300B1EF16 /* HalfModalTransitionAnimator.swift */,
-				F25B891B238001F300B1EF16 /* HalfModalTransitioningDelegate.swift */,
+				F2F9FC202380D73A00F60145 /* HalfModalPresentationController.swift */,
+				F2F9FC212380D73A00F60145 /* HalfModalInteractiveTransition.swift */,
+				F2F9FC222380D73A00F60145 /* HalfModalTransitionAnimator.swift */,
+				F2F9FC232380D73A00F60145 /* HalfModalTransitioningDelegate.swift */,
 			);
-			path = ModalTransition;
+			name = "Modal Transition";
+			path = "Sources/Modal Transition";
 			sourceTree = "<group>";
 		};
-		F25B89202380020200B1EF16 /* Views */ = {
+		F2F9FC242380D73A00F60145 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F25B89212380020B00B1EF16 /* OptionHeaderView.swift */,
-				F25B89222380020B00B1EF16 /* OptionHeaderView.xib */,
-				F25B89232380020B00B1EF16 /* OptionsTableViewCell.swift */,
-				F25B89242380020B00B1EF16 /* OptionsTableViewCell.xib */,
+				F2F9FC252380D73A00F60145 /* OptionHeaderView.swift */,
+				F2F9FC262380D73A00F60145 /* OptionsTableViewCell.swift */,
+				F2F9FC272380D73A00F60145 /* OptionsTableViewCell.xib */,
+				F2F9FC282380D73A00F60145 /* OptionHeaderView.xib */,
 			);
-			path = Views;
+			name = Views;
+			path = Sources/Views;
+			sourceTree = "<group>";
+		};
+		F2F9FC392380D7B300F60145 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2F9FC3A2380D7B300F60145 /* Media.xcassets */,
+			);
+			name = Resources;
+			path = Sources/Resources;
+			sourceTree = "<group>";
+		};
+		F2F9FC3B2380D7B300F60145 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2F9FC3D2380D7C400F60145 /* Extensions.swift */,
+			);
+			name = Extensions;
+			path = Sources/Extensions;
 			sourceTree = "<group>";
 		};
 		F47A836774CE51BB8AE4F2A0BEB220CD /* iOS */ = {
@@ -535,6 +552,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					5E2FB8178BA9E56298A552F823E62AEF = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -569,9 +591,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25B89282380020B00B1EF16 /* OptionsTableViewCell.xib in Resources */,
-				F25B8930238003ED00B1EF16 /* Media.xcassets in Resources */,
-				F25B89262380020B00B1EF16 /* OptionHeaderView.xib in Resources */,
+				F2F9FC362380D73A00F60145 /* OptionHeaderView.xib in Resources */,
+				F2F9FC3C2380D7B300F60145 /* Media.xcassets in Resources */,
+				F2F9FC352380D73A00F60145 /* OptionsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,17 +626,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25B891D238001F300B1EF16 /* HalfModalInteractiveTransition.swift in Sources */,
-				F25B89252380020B00B1EF16 /* OptionHeaderView.swift in Sources */,
+				F2F9FC2E2380D73A00F60145 /* Protocols.swift in Sources */,
+				F2F9FC322380D73A00F60145 /* HalfModalTransitioningDelegate.swift in Sources */,
+				F2F9FC2F2380D73A00F60145 /* HalfModalPresentationController.swift in Sources */,
+				F2F9FC342380D73A00F60145 /* OptionsTableViewCell.swift in Sources */,
+				F2F9FC332380D73A00F60145 /* OptionHeaderView.swift in Sources */,
+				F2F9FC3E2380D7C400F60145 /* Extensions.swift in Sources */,
 				16B994EA548693D8FB57341DAD35BBE7 /* EasyOptions-dummy.m in Sources */,
-				F25B892A2380021E00B1EF16 /* Protocols.swift in Sources */,
-				F25B892C2380022F00B1EF16 /* EZOptionsViewController.swift in Sources */,
-				603B64923EEF6491688D4A193D991337 /* ReplaceMe.swift in Sources */,
-				F25B89272380020B00B1EF16 /* OptionsTableViewCell.swift in Sources */,
-				F25B891E238001F300B1EF16 /* HalfModalTransitionAnimator.swift in Sources */,
-				F25B891C238001F300B1EF16 /* HalfModalPresentationController.swift in Sources */,
-				F25B892E2380023900B1EF16 /* Extensions.swift in Sources */,
-				F25B891F238001F300B1EF16 /* HalfModalTransitioningDelegate.swift in Sources */,
+				F2F9FC2A2380D73A00F60145 /* EZOptionsViewController.swift in Sources */,
+				F2F9FC312380D73A00F60145 /* HalfModalTransitionAnimator.swift in Sources */,
+				F2F9FC302380D73A00F60145 /* HalfModalInteractiveTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,10 +687,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C70B5AE5CCBD6E2AD5DE5B7EDDF1D70 /* Debug */ = {
+		193181C8E757972B0A8AA67CE8A17E38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8D3BC61750C2318DABDE8E91A8BC1747 /* EasyOptions.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -692,10 +714,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		2CF80A50B1775F1C8C9C68680A0E2CE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -729,38 +752,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		428782E4B341E33CCF5D4CD548DCE970 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D3BC61750C2318DABDE8E91A8BC1747 /* EasyOptions.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EasyOptions/EasyOptions-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyOptions/EasyOptions-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyOptions/EasyOptions.modulemap";
-				PRODUCT_MODULE_NAME = EasyOptions;
-				PRODUCT_NAME = EasyOptions;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		556C1EFC836BA6D001D1695333F5BFF5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -984,6 +975,39 @@
 			};
 			name = Debug;
 		};
+		D1FC6969542117B3094F823516F2533F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3BC61750C2318DABDE8E91A8BC1747 /* EasyOptions.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EasyOptions/EasyOptions-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyOptions/EasyOptions-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyOptions/EasyOptions.modulemap";
+				PRODUCT_MODULE_NAME = EasyOptions;
+				PRODUCT_NAME = EasyOptions;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E18FBBA9FE23CD84EE8E459729E9E2FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14E2731FEEFC963072C2EEACF1323C98 /* Pods-EasyOptions_Tests.release.xcconfig */;
@@ -1064,8 +1088,8 @@
 		567E757E6FBFA8727712D2463C2574B6 /* Build configuration list for PBXNativeTarget "EasyOptions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1C70B5AE5CCBD6E2AD5DE5B7EDDF1D70 /* Debug */,
-				428782E4B341E33CCF5D4CD548DCE970 /* Release */,
+				D1FC6969542117B3094F823516F2533F /* Debug */,
+				193181C8E757972B0A8AA67CE8A17E38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
