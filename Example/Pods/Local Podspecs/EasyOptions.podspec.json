@@ -18,8 +18,11 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "EasyOptions/Classes/**/*",
+  "source_files": "Sources/Classes/**/*",
   "frameworks": "UIKit",
-  "swift_versions": "5.0",
-  "swift_version": "5.0"
+  "swift_versions": [
+    "5.0",
+    "5.1"
+  ],
+  "swift_version": "5.1"
 }
