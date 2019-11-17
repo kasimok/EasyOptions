@@ -1,10 +1,3 @@
-//
-//  OptionsTableViewCell.swift
-//  EasyOptions
-//
-//  Created by evilisn_jiang on 11/15/19.
-//
-
 import UIKit
 
 class OptionsTableViewCell: UITableViewCell {
