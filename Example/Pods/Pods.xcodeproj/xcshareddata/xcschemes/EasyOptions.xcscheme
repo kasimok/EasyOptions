@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E2FB8178BA9E56298A552F823E62AEF"
-               BuildableName = "EasyOptions.framework"
+               BuildableName = "EasyOptions"
                BlueprintName = "EasyOptions"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E2FB8178BA9E56298A552F823E62AEF"
-            BuildableName = "EasyOptions.framework"
+            BuildableName = "EasyOptions"
             BlueprintName = "EasyOptions"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
