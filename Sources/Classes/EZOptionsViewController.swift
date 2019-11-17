@@ -1,10 +1,3 @@
-//
-//  EZOptionsViewController.swift
-//  EasyOptions
-//
-//  Created by evilisn_jiang on 11/15/19.
-//
-
 import UIKit
 
 open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControllerType{
@@ -23,7 +16,7 @@ open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControll
     
     weak var delegate: ToolbarOptionsControllerDelegate?
     
-    init(options: [ToolbarOption], currentVC: UIViewController, currentOption: ToolbarOption?) {
+    public init(options: [ToolbarOption], currentVC: UIViewController, currentOption: ToolbarOption?) {
         self.currentOption = currentOption
         self.options = options
         self.currentVC = currentVC
@@ -37,9 +30,10 @@ open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControll
     fileprivate lazy var tableView: UITableView = {
         let tv = UITableView.init(frame: view.bounds, style: .plain)
         view.addSubview(tv)
+        //Register Cell
         tv.register(UINib(nibName: "OptionsTableViewCell",
                           bundle: Bundle(for: OptionsTableViewCell.self)),
-                    forCellReuseIdentifier: "OptionsTableViewCell")
+                    forCellReuseIdentifier: kTableViewReusefulIdentifier)
         tv.isScrollEnabled = false
         return tv
     }()

@@ -7,6 +7,15 @@
 //
 
 import UIKit
+import EasyOptions
+
+struct FlowerOption: ToolbarOption {
+    var name: String
+    
+    var icon: UIImage?
+    
+    var description: String
+}
 
 class ViewController: UIViewController {
 
@@ -19,6 +28,25 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    @IBAction func showOptionMenu1(_ sender: Any) {
+        let flowerNameOptions = ["Rose","Lily","Tulip","Orchids","Carnation"]
+        /*
+         let fileActionVC = FileMoreActionsViewController.init(broswerViewController: self, fileMoreActionsType: .single, selectedFile: file)
+         fileActionVC.delegate = self
+         let naviController = UINavigationController(rootViewController: fileActionVC)
+         
+         halfModalTransitioningDelegate = HalfModalTransitioningDelegate(viewController: self, presentingViewController: naviController, viewHeight: fileActionVC.viewHeight, allowPanToMaximise: fileActionVC.isMaximiseAllowed)
+         naviController.modalPresentationStyle = .custom
+         naviController.transitioningDelegate = halfModalTransitioningDelegate
+         present(naviController, animated: true, completion: nil)
+         */
+        let options: [FlowerOption] = flowerNameOptions.map{FlowerOption(name: $0, icon: UIImage(named: $0), description: $0)}
+        let flowerPicker = EZOptionsViewController.init(options: options, currentVC: self, currentOption: nil)
+        
+        33
+    }
+    
 }
 
