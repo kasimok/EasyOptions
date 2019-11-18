@@ -43,9 +43,8 @@ class ViewController: UIViewController {
          present(naviController, animated: true, completion: nil)
          */
         let options: [FlowerOption] = flowerNameOptions.map{FlowerOption(name: $0, icon: UIImage(named: $0), description: $0)}
-        let flowerPicker = EZOptionsViewController.init(options: options, currentVC: self, currentOption: nil)
-        
-        33
+        let picker = EZOptionsViewController(options: options, currentVC: self, selectedOption: nil)
+        present(picker, animated: true, completion: nil)
     }
     
 }

@@ -1,14 +1,24 @@
 import UIKit
 
-open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControllerType{
+///A table view controller for display of options
+class OptionsTableViewController: UIViewController, ToolbarOptionsViewControllerType{
     
-    public var viewHeight: CGFloat = 0.0
+    internal var viewHeight: CGFloat {
+        get{
+            if #available(iOS 11.0, *) {
+                return CGFloat(CGFloat(options.count) * toolbarSettingCellHeight + ((UIApplication.shared.keyWindow?.safeAreaInsets.bottom)!>0 ? (UIApplication.shared.keyWindow?.safeAreaInsets.bottom)!+30 : 30))
+            } else {
+                // Fallback on earlier versions
+                return 0.0
+            }
+        }
+    }
     
-    public var options: [ToolbarOption] = []
+    internal var options: [ToolbarOption] = []
     
-    public var currentOption: ToolbarOption?
+    internal var currentOption: ToolbarOption?
     
-    public var currentVC: UIViewController?
+    internal var currentVC: UIViewController?
         
     private let kTableViewReusefulIdentifier = "ViewModeOptionsCell"
     
@@ -16,8 +26,8 @@ open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControll
     
     weak var delegate: ToolbarOptionsControllerDelegate?
     
-    public init(options: [ToolbarOption], currentVC: UIViewController, currentOption: ToolbarOption?) {
-        self.currentOption = currentOption
+    init(options: [ToolbarOption], currentVC: UIViewController, selectedOption: ToolbarOption?) {
+        self.currentOption = selectedOption
         self.options = options
         self.currentVC = currentVC
         super.init(nibName: nil, bundle: nil)
@@ -66,7 +76,7 @@ open class EZOptionsViewController: UIViewController, ToolbarOptionsViewControll
     }
 }
 
-extension EZOptionsViewController: UITableViewDelegate{
+extension OptionsTableViewController: UITableViewDelegate{
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selected = options[indexPath.row]
@@ -88,7 +98,7 @@ extension EZOptionsViewController: UITableViewDelegate{
     
 }
 
-extension EZOptionsViewController: UITableViewDataSource{
+extension OptionsTableViewController: UITableViewDataSource{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return options.count
     }

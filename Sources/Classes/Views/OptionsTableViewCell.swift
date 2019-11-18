@@ -7,6 +7,5 @@ class OptionsTableViewCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var trailingImageView: UIImageView!
-    
-    
+
 }

@@ -30,7 +30,7 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_check_normal" translatesAutoresizingMaskIntoConstraints="NO" id="ufi-fz-01S" userLabel="trailingImageView">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ufi-fz-01S" userLabel="trailingImageView">
                         <rect key="frame" x="284" y="2" width="20" height="40"/>
                         <color key="tintColor" red="0.49019607843137253" green="0.49019607843137253" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -50,14 +50,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="checkMark" destination="ufi-fz-01S" id="M9k-cN-Cqe"/>
-                <outlet property="iconView" destination="slB-hm-tRd" id="eJt-hx-SEJ"/>
                 <outlet property="label" destination="rk8-PR-t2Z" id="F3a-my-7b0"/>
+                <outlet property="leadingImageView" destination="slB-hm-tRd" id="deD-1z-nB7"/>
+                <outlet property="trailingImageView" destination="ufi-fz-01S" id="5jb-1e-LXn"/>
             </connections>
             <point key="canvasLocation" x="52.799999999999997" y="174.51274362818592"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="icon_check_normal" width="22" height="17"/>
-    </resources>
 </document>
