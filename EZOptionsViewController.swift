@@ -8,6 +8,12 @@ public class EZOptionsViewController: UINavigationController{
     ///Delegate View Controller responsible for model presentation between `presenting` view controller and `presented` view controller
     var halfModelTransitioningDelegate : HalfModalTransitioningDelegate!
     
+    public weak var ezOptionsDelegate: ToolbarOptionsControllerDelegate?{
+        didSet{
+            optionTableViewController.delegate = ezOptionsDelegate
+        }
+    }
+    
     public init(options: [ToolbarOption],
          currentVC: UIViewController,
          selectedOption: ToolbarOption?) {

@@ -7,5 +7,16 @@ class OptionsTableViewCell: UITableViewCell {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var trailingImageView: UIImageView!
-
+    
+    func configureCellWith(option: ToolbarOption, currentOption: ToolbarOption?) {
+        self.leadingImageView.image = option.icon
+        self.label.text = option.name
+        self.trailingImageView.image = ImageUtils.imageOfCheckMark
+        if let current = currentOption, current.name == option.name{
+            self.trailingImageView.isHidden = false
+        }else{
+            self.trailingImageView.isHidden = true
+        }
+    }
+    
 }

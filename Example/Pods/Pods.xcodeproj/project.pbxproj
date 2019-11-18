@@ -50,6 +50,7 @@
 		F25B893C23813F4800B1EF16 /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B893B23813F4800B1EF16 /* OptionsTableViewController.swift */; };
 		F25B893E23813F6300B1EF16 /* EZOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B893D23813F6300B1EF16 /* EZOptionsViewController.swift */; };
 		F2E00D012382297900E03846 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D071C6151A8E6E045F54185767F07D58 /* Media.xcassets */; };
+		F2E00D0723823C9100E03846 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E00D0623823C9100E03846 /* ImageUtils.swift */; };
 		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E621F768263424D9C5C35D58513625CB /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F96CCA89B106779CA32A17BA9434489D /* HalfModalPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA66F78DC77B2608E88CCE61FC8570A2 /* HalfModalPresentationController.swift */; };
 /* End PBXBuildFile section */
@@ -156,6 +157,7 @@
 		EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		F25B893B23813F4800B1EF16 /* OptionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OptionsTableViewController.swift; path = Sources/Classes/OptionsTableViewController.swift; sourceTree = "<group>"; };
 		F25B893D23813F6300B1EF16 /* EZOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EZOptionsViewController.swift; sourceTree = "<group>"; };
+		F2E00D0623823C9100E03846 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		F55CE93C078F6D19C39C5CAC0B824F3A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		F6218053838A540681305E061A426B61 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,6 +399,7 @@
 		CB9824529337FE6350270F0E0E7D00EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F2E00D0623823C9100E03846 /* ImageUtils.swift */,
 				F6218053838A540681305E061A426B61 /* Extensions.swift */,
 				4A601B6D97070FEAF760FC4F2D82F0CC /* Protocols.swift */,
 			);
@@ -685,6 +688,7 @@
 				0E199B033089F0E60CEA6D3AF9E61BD3 /* OptionsTableViewCell.swift in Sources */,
 				471DCD857EA6192C0BA1D4FEC103421D /* OptionsTableViewCell.xib in Sources */,
 				367F313D6D49EFD69635D12539F718DA /* Protocols.swift in Sources */,
+				F2E00D0723823C9100E03846 /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

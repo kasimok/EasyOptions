@@ -82,7 +82,9 @@ extension OptionsTableViewController: UITableViewDelegate{
         let selected = options[indexPath.row]
         
         if let currentOption = currentOption, selected.name == currentOption.name{
-            delegate?.optionsViewController(self, didTapOnCurrentOption: selected)
+            delegate?.optionsViewController(self, didTapOnSelected: selected)
+        }else{
+            delegate?.optionsViewController(self, didSelectedNewOption: selected)
         }
         
         dismissVC(selected)
@@ -109,19 +111,6 @@ extension OptionsTableViewController: UITableViewDataSource{
         cell.configureCellWith(option: options[indexPath.row], currentOption: currentOption)
         
         return cell
-    }
-}
-
-
-extension OptionsTableViewCell{
-    func configureCellWith(option: ToolbarOption, currentOption: ToolbarOption?) {
-        self.leadingImageView.image = option.icon
-        self.label.text = option.name
-        if let current = currentOption, current.name == option.name{
-            self.trailingImageView.isHidden = false
-        }else{
-            self.trailingImageView.isHidden = true
-        }
     }
 }
 

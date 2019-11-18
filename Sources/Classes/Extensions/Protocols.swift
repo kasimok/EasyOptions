@@ -11,7 +11,7 @@ public protocol ToolbarOptionsControllerDelegate: class {
     /// Did selected on a new option(diffrent than current option if any)
     func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didSelectedNewOption option: ToolbarOption)
     /// Did selected on current option(if any)
-    func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didTapOnCurrentOption option: ToolbarOption)
+    func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didTapOnSelected option: ToolbarOption)
 }
 
 ///The protocol for presented toolbar options view controller
