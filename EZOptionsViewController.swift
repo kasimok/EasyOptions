@@ -16,13 +16,14 @@ public class EZOptionsViewController: UINavigationController{
     
     public init(options: [ToolbarOption],
          currentVC: UIViewController,
-         selectedOption: ToolbarOption?) {
+         selectedOption: ToolbarOption?,
+         wantsBlurDimmingView: Bool = false) {
         //1. Make Optionstableviewcontroller
         optionTableViewController = OptionsTableViewController(options: options, currentVC: currentVC, selectedOption: selectedOption)
         
         super.init(rootViewController: optionTableViewController)
         
-        halfModelTransitioningDelegate = HalfModalTransitioningDelegate(viewController: currentVC, presentingViewController: self, viewHeight: optionTableViewController.viewHeight, allowPanToMaximise: false)
+        halfModelTransitioningDelegate = HalfModalTransitioningDelegate(viewController: currentVC, presentingViewController: self, viewHeight: optionTableViewController.viewHeight, allowPanToMaximise: false, wantsBlurDimmingView: wantsBlurDimmingView)
         self.modalPresentationStyle = .custom
         self.transitioningDelegate = halfModelTransitioningDelegate
     }

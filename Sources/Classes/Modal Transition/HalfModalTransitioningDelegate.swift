@@ -11,12 +11,15 @@ class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioningDel
     
     var allowMaximum: Bool = false
     
-    init(viewController: UIViewController, presentingViewController: UIViewController, viewHeight heightForModalMode: CGFloat,allowPanToMaximise: Bool) {
+    var wantsBlurBg: Bool = false
+    
+    init(viewController: UIViewController, presentingViewController: UIViewController, viewHeight heightForModalMode: CGFloat,allowPanToMaximise: Bool, wantsBlurDimmingView: Bool = false) {
         self.viewController = viewController
         self.presentingViewController = presentingViewController
         self.interactionController = HalfModalInteractiveTransition(viewController: self.viewController, withView: self.presentingViewController.view, presentingViewController: self.presentingViewController)
         self.modalViewHeight = heightForModalMode
         self.allowMaximum = allowPanToMaximise
+        self.wantsBlurBg = wantsBlurDimmingView
         super.init()
     }
     
@@ -25,7 +28,7 @@ class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioningDel
     }
     
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return HalfModalPresentationController(presentedViewController: presented, presenting: presenting,modalHeight: modalViewHeight, allowPanToMaximise: allowMaximum)
+        return HalfModalPresentationController(presentedViewController: presented, presenting: presenting,modalHeight: modalViewHeight, allowPanToMaximise: allowMaximum, wantsBlur: wantsBlurBg)
     }
     
     func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {

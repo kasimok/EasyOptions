@@ -18,6 +18,8 @@ struct FlowerOption: ToolbarOption {
 }
 
 class ViewController: UIViewController {
+    
+    var selectedFlower: FlowerOption?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func showOptionMenu1(_ sender: Any) {
         let flowerNameOptions = ["Rose","Lily","Tulip","Orchids","Carnation"]
         let options: [FlowerOption] = flowerNameOptions.map{FlowerOption(name: $0, icon: UIImage(named: $0.lowercased()), description: $0)}
-        let picker = EZOptionsViewController(options: options, currentVC: self, selectedOption: options.last)
+        let picker = EZOptionsViewController(options: options, currentVC: self, selectedOption: selectedFlower,wantsBlurDimmingView: true)
         picker.ezOptionsDelegate = self
         present(picker, animated: true, completion: nil)
     }
@@ -42,6 +44,7 @@ class ViewController: UIViewController {
 extension ViewController: ToolbarOptionsControllerDelegate{
     func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didSelectedNewOption option: ToolbarOption) {
         print("Clicked new \(option)")
+        selectedFlower = option as? FlowerOption
     }
     
     func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didTapOnSelected option: ToolbarOption) {

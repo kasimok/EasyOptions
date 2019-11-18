@@ -5,11 +5,15 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     
     internal var viewHeight: CGFloat {
         get{
+            let height = CGFloat(CGFloat(options.count) * toolbarSettingCellHeight)
             if #available(iOS 11.0, *) {
-                return CGFloat(CGFloat(options.count) * toolbarSettingCellHeight + ((UIApplication.shared.keyWindow?.safeAreaInsets.bottom)!>0 ? (UIApplication.shared.keyWindow?.safeAreaInsets.bottom)!+30 : 30))
+                if let bottomSafeArea = UIApplication.shared.keyWindow?.safeAreaInsets.bottom {
+                    return bottomSafeArea + 30 + height
+                }else{
+                    return height + 30
+                }
             } else {
-                // Fallback on earlier versions
-                return 0.0
+                return height + 30
             }
         }
     }
@@ -19,7 +23,7 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     internal var currentOption: ToolbarOption?
     
     internal var currentVC: UIViewController?
-        
+    
     private let kTableViewReusefulIdentifier = "ViewModeOptionsCell"
     
     private let toolbarSettingCellHeight: CGFloat = 50
@@ -107,7 +111,7 @@ extension OptionsTableViewController: UITableViewDataSource{
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewReusefulIdentifier, for: indexPath) as! OptionsTableViewCell
-       
+        
         cell.configureCellWith(option: options[indexPath.row], currentOption: currentOption)
         
         return cell

@@ -13,6 +13,7 @@ class HalfModalPresentationController : UIPresentationController {
     var direction: CGFloat = 0
     var state: ModalScaleState = .halfScreen
     var halfHeight: CGFloat = 200
+    var wantsBlurDimmingView :Bool = false
     var dimmingView: UIView {
         if let dimmedView = _dimmingView {
             return dimmedView
@@ -21,21 +22,21 @@ class HalfModalPresentationController : UIPresentationController {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: containerView!.bounds.width, height: containerView!.bounds.height))
         
         view.backgroundColor = UIColor(white: 0.1, alpha: 0.35)
-        /*
-         // Blur Effect
-         let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
-         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-         blurEffectView.frame = view.bounds
-         view.addSubview(blurEffectView)
-         
-         // Vibrancy Effect
-         let vibrancyEffect = UIVibrancyEffect(blurEffect: blurEffect)
-         let vibrancyEffectView = UIVisualEffectView(effect: vibrancyEffect)
-         vibrancyEffectView.frame = view.bounds
-         
-         // Add the vibrancy view to the blur view
-         blurEffectView.contentView.addSubview(vibrancyEffectView)
-         */
+        if wantsBlurDimmingView{
+            // Blur Effect
+            let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+            let blurEffectView = UIVisualEffectView(effect: blurEffect)
+            blurEffectView.frame = view.bounds
+            view.addSubview(blurEffectView)
+            
+            // Vibrancy Effect
+            let vibrancyEffect = UIVibrancyEffect(blurEffect: blurEffect)
+            let vibrancyEffectView = UIVisualEffectView(effect: vibrancyEffect)
+            vibrancyEffectView.frame = view.bounds
+            
+            // Add the vibrancy view to the blur view
+            blurEffectView.contentView.addSubview(vibrancyEffectView)
+        }
         _dimmingView = view
         let panGes = UITapGestureRecognizer(target: self, action: #selector(dismiss(_:)))
         _dimmingView?.addGestureRecognizer(panGes)
@@ -52,10 +53,11 @@ class HalfModalPresentationController : UIPresentationController {
         adjustPresentedViewFrame()
     }
     
-    init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, modalHeight: CGFloat, allowPanToMaximise: Bool = true) {
+    init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?, modalHeight: CGFloat, allowPanToMaximise: Bool = true, wantsBlur: Bool = false) {
         self.panGestureRecognizer = UIPanGestureRecognizer()
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
         self.halfHeight = modalHeight
+        self.wantsBlurDimmingView = wantsBlur
         if allowPanToMaximise{
             panGestureRecognizer.addTarget(self, action: #selector(onPan(pan:)))
             presentedViewController.view.addGestureRecognizer(panGestureRecognizer)
