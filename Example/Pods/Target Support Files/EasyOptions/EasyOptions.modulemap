@@ -1,0 +1,6 @@
+framework module EasyOptions {
+  umbrella header "EasyOptions-umbrella.h"
+
+  export *
+  module * { export * }
+}
