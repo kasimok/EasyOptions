@@ -6,7 +6,9 @@
 [![Platform](https://img.shields.io/cocoapods/p/EasyOptions.svg?style=flat)](https://cocoapods.org/pods/EasyOptions)
 
 ## Example
+
 See Examples in the example project
+
 ![demo](gitDemo.gif)
 
 
