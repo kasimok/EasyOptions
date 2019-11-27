@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyOptions'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A easy to use bottom slide up option menu.'
 
 # This description is used to generate tags and improve search results.

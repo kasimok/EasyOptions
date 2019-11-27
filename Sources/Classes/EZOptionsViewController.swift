@@ -1,7 +1,7 @@
 import Foundation
 
 
-public class EZOptionsViewController: UIViewController{
+open class EZOptionsViewController: UIViewController{
     
     let optionTableViewController: OptionsTableViewController
     
