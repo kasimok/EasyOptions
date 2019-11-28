@@ -28,12 +28,15 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     
     private let toolbarSettingCellHeight: CGFloat = 50
     
+    private let tintColor: UIColor
+    
     weak var delegate: ToolbarOptionsControllerDelegate?
     
-    init(options: [ToolbarOption], currentVC: UIViewController, selectedOption: ToolbarOption?) {
+    init(options: [ToolbarOption], currentVC: UIViewController, selectedOption: ToolbarOption?, iconTintColor: UIColor = UIButton(type: .system).tintColor) {
         self.currentOption = selectedOption
         self.options = options
         self.currentVC = currentVC
+        self.tintColor = iconTintColor
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -49,6 +52,7 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
                           bundle: Bundle(for: OptionsTableViewCell.self)),
                     forCellReuseIdentifier: kTableViewReusefulIdentifier)
         tv.isScrollEnabled = false
+        tv.backgroundColor = UIColor.groupTableViewBackground
         return tv
     }()
     
@@ -76,7 +80,6 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     }
     
     @objc func dismissVC(_ sender: Any){
-        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -84,14 +87,14 @@ extension OptionsTableViewController: UITableViewDelegate{
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selected = options[indexPath.row]
-        
-        if let currentOption = currentOption, selected.name == currentOption.name{
-            delegate?.optionsViewController(self.parent as! EZOptionsViewController, didTapOnSelected: selected)
-        }else{
-            delegate?.optionsViewController(self.parent as! EZOptionsViewController, didSelectedNewOption: selected)
+        dismiss(animated: true) { [weak self] in
+            guard let self = self else {return}
+            if let currentOption = self.currentOption, selected.name == currentOption.name{
+                self.delegate?.optionsViewController(self.parent as! EZOptionsViewController, didTapOnSelected: selected)
+            }else{
+                self.delegate?.optionsViewController(self.parent as! EZOptionsViewController, didSelectedNewOption: selected)
+            }
         }
-        
-        dismissVC(selected)
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -112,7 +115,7 @@ extension OptionsTableViewController: UITableViewDataSource{
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewReusefulIdentifier, for: indexPath) as! OptionsTableViewCell
         
-        cell.configureCellWith(option: options[indexPath.row], currentOption: currentOption)
+        cell.configureCellWith(option: options[indexPath.row], currentOption: currentOption, tintColor: tintColor)
         
         return cell
     }

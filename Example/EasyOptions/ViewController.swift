@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func showOptionMenu1(_ sender: Any) {
         let flowerNameOptions = ["Rose","Lily","Tulip","Orchids","Carnation"]
         let options: [FlowerOption] = flowerNameOptions.map{FlowerOption(name: $0, icon: UIImage(named: $0.lowercased()), description: $0)}
-        let picker = EZOptionsViewController(options: options, currentVC: self, selectedOption: selectedFlower, wantsBlurDimmingView: true)
+        let picker = EZOptionsViewController(options: options, currentVC: self, selectedOption: selectedFlower, wantsBlurDimmingView: true, iconTintColor: UIColor.red)
         picker.delegate = self
         present(picker, animated: true, completion: nil)
     }

@@ -17,9 +17,9 @@ open class EZOptionsViewController: UIViewController{
     public init(options: [ToolbarOption],
          currentVC: UIViewController,
          selectedOption: ToolbarOption?,
-         wantsBlurDimmingView: Bool = false) {
+         wantsBlurDimmingView: Bool = false, iconTintColor : UIColor = UIButton(type: .system).tintColor) {
         //1. Make Optionstableviewcontroller
-        optionTableViewController = OptionsTableViewController(options: options, currentVC: currentVC, selectedOption: selectedOption)
+        optionTableViewController = OptionsTableViewController(options: options, currentVC: currentVC, selectedOption: selectedOption, iconTintColor: iconTintColor)
         
         super.init(nibName: nil, bundle: nil)
         
