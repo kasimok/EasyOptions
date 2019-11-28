@@ -86,9 +86,9 @@ extension OptionsTableViewController: UITableViewDelegate{
         let selected = options[indexPath.row]
         
         if let currentOption = currentOption, selected.name == currentOption.name{
-            delegate?.optionsViewController(self, didTapOnSelected: selected)
+            delegate?.optionsViewController(self.parent as! EZOptionsViewController, didTapOnSelected: selected)
         }else{
-            delegate?.optionsViewController(self, didSelectedNewOption: selected)
+            delegate?.optionsViewController(self.parent as! EZOptionsViewController, didSelectedNewOption: selected)
         }
         
         dismissVC(selected)
