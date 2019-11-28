@@ -42,12 +42,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: ToolbarOptionsControllerDelegate{
-    func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didSelectedNewOption option: ToolbarOption) {
+    func optionsViewController(_ optionsViewController: EZOptionsViewController, didSelectedNewOption option: ToolbarOption) {
         print("Clicked new \(option)")
         selectedFlower = option as? FlowerOption
     }
     
-    func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didTapOnSelected option: ToolbarOption) {
+    func optionsViewController(_ optionsViewController: EZOptionsViewController, didTapOnSelected option: ToolbarOption) {
         print("Clicked current selected: \(option)")
     }
     
