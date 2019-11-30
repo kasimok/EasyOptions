@@ -20,7 +20,7 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     
     internal var options: [ToolbarOption] = []
     
-    internal var currentOption: ToolbarOption?
+    internal var selectedIndexPath: IndexPath?
     
     internal var currentVC: UIViewController?
     
@@ -31,9 +31,11 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
     weak var delegate: ToolbarOptionsControllerDelegate?
     
     init(options: [ToolbarOption], currentVC: UIViewController, selectedOption: ToolbarOption?) {
-        self.currentOption = selectedOption
         self.options = options
         self.currentVC = currentVC
+        if let selected = selectedOption,let row = options.firstIndex(where: {$0.name == selected.name}){
+            selectedIndexPath = IndexPath(row: row, section: 0)
+        }
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -49,6 +51,7 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
                           bundle: Bundle(for: OptionsTableViewCell.self)),
                     forCellReuseIdentifier: kTableViewReusefulIdentifier)
         tv.isScrollEnabled = false
+        tv.backgroundColor = UIColor.groupTableViewBackground
         return tv
     }()
     
@@ -75,23 +78,61 @@ class OptionsTableViewController: UIViewController, ToolbarOptionsViewController
         tableView.tableHeaderView = headerView
     }
     
-    @objc func dismissVC(_ sender: Any){
-        dismiss(animated: true, completion: nil)
-    }
 }
 
 extension OptionsTableViewController: UITableViewDelegate{
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selected = options[indexPath.row]
-        
-        if let currentOption = currentOption, selected.name == currentOption.name{
-            delegate?.optionsViewController(self, didTapOnSelected: selected)
-        }else{
-            delegate?.optionsViewController(self, didSelectedNewOption: selected)
+        let touchingNewSelection = (selectedIndexPath != indexPath)
+        selectedIndexPath = indexPath
+        if #available(iOS 11.0, *) {
+            self.tableView.performBatchUpdates({
+                tableView.reloadData()
+            }) { _ in
+                self.dismiss(animated: true) { [weak self] in
+                    guard let self = self else {return}
+                    if touchingNewSelection{
+                        self.delegate?.optionsViewController(self, didSelectedNewOption: self.options[indexPath.row])
+                    }else{
+                        self.delegate?.optionsViewController(self, didTapOnSelected: self.options[indexPath.row])
+
+                    }
+                }
+            }
+        } else {
+            self.tableView.beginUpdates()
+            tableView.reloadData()
+            self.tableView.endUpdates()
+            self.dismiss(animated: true) { [weak self] in
+                guard let self = self else {return}
+                if touchingNewSelection{
+                    self.delegate?.optionsViewController(self, didSelectedNewOption: self.options[indexPath.row])
+                }else{
+                    self.delegate?.optionsViewController(self, didTapOnSelected: self.options[indexPath.row])
+                }
+            }
         }
         
-        dismissVC(selected)
+//        tableView.selectRow(at: <#T##IndexPath?#>, animated: <#T##Bool#>, scrollPosition: <#T##UITableView.ScrollPosition#>)
+//        tableView.reloadData()
+//        let selected = options[indexPath.row]
+//
+//        var indexPathsNeedReload: [IndexPath] = []
+//
+//        if let oldSelectionIndex = options.firstIndex(where: {$0.name == currentOption?.name}) {
+//            indexPathsNeedReload.append(IndexPath(row: oldSelectionIndex, section: 0))
+//        }
+//        currentOption = selected
+//        tableView.reloadRows(at: indexPathsNeedReload + [indexPath], with: .none)
+//
+//        dismiss(animated: true) { [weak self] in
+//            guard let self = self else {return}
+//            if let currentOption = self.currentOption, selected.name == currentOption.name{
+//                self.delegate?.optionsViewController(self, didTapOnSelected: selected)
+//            }else{
+//                self.delegate?.optionsViewController(self, didSelectedNewOption: selected)
+//            }
+//        }
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -112,8 +153,8 @@ extension OptionsTableViewController: UITableViewDataSource{
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kTableViewReusefulIdentifier, for: indexPath) as! OptionsTableViewCell
         
-        cell.configureCellWith(option: options[indexPath.row], currentOption: currentOption)
-        
+        cell.configureCellWith(option: options[indexPath.row])
+        cell.accessoryType = (indexPath == selectedIndexPath) ? .checkmark : .none
         return cell
     }
 }

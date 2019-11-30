@@ -4,6 +4,7 @@ import Foundation
 public protocol ToolbarOption: CustomStringConvertible{
     var name: String {set get}
     var icon: UIImage? {set get}
+    var accessoryIcon: UIImage? {set get}
 }
 
 
@@ -23,8 +24,8 @@ public protocol ToolbarOptionsViewControllerType: class{
     /// all available options
     var options: [ToolbarOption] {get set}
     
-    /// current selected option, setting it to none nil will have a checkmark on line end
-    var currentOption: ToolbarOption? {get set}
+//    /// current selected option, setting it to none nil will have a checkmark on line end
+//    var currentOption: ToolbarOption? {get set}
     
     /// presenting view controller
     var currentVC: UIViewController? {get set}

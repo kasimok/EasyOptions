@@ -10,6 +10,9 @@ import UIKit
 import EasyOptions
 
 struct FlowerOption: ToolbarOption {
+    
+    var accessoryIcon: UIImage?
+    
     var name: String
     
     var icon: UIImage?
@@ -50,7 +53,5 @@ extension ViewController: ToolbarOptionsControllerDelegate{
     func optionsViewController(_ optionsViewController: ToolbarOptionsViewControllerType, didTapOnSelected option: ToolbarOption) {
         print("Clicked current selected: \(option)")
     }
-    
-    
 }
 
