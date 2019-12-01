@@ -1,7 +1,7 @@
 import Foundation
 
 
-public class EZOptionsViewController: UINavigationController{
+open class EZOptionsViewController: UINavigationController{
     
     let optionTableViewController: OptionsTableViewController
     
@@ -28,7 +28,7 @@ public class EZOptionsViewController: UINavigationController{
         self.transitioningDelegate = halfModelTransitioningDelegate
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
