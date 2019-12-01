@@ -1,6 +1,6 @@
 import UIKit
 
-class HalfModalTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
+open class HalfModalTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     var type: HalfModalTransitionAnimatorType
     

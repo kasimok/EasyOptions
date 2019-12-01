@@ -5,7 +5,7 @@ enum ModalScaleState {
     case halfScreen
 }
 
-class HalfModalPresentationController : UIPresentationController {
+open class HalfModalPresentationController : UIPresentationController {
     var isMaximized: Bool = false
     
     var _dimmingView: UIView?

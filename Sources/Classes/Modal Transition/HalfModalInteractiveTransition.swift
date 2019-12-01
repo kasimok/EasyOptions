@@ -1,6 +1,6 @@
 import UIKit
 
-class HalfModalInteractiveTransition: UIPercentDrivenInteractiveTransition {
+open class HalfModalInteractiveTransition: UIPercentDrivenInteractiveTransition {
     var viewController: UIViewController
     var presentingViewController: UIViewController?
     var panGestureRecognizer: UIPanGestureRecognizer

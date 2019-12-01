@@ -1,7 +1,7 @@
 import UIKit
 
 ///A table view controller for display of options
-class OptionsTableViewController: UIViewController, ToolbarOptionsViewControllerType{
+open class OptionsTableViewController: UIViewController, ToolbarOptionsViewControllerType{
     
     internal var viewHeight: CGFloat {
         get{

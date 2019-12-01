@@ -1,6 +1,6 @@
 import UIKit
 
-class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
+open class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioningDelegate {
     var viewController: UIViewController
     var presentingViewController: UIViewController
     var interactionController: HalfModalInteractiveTransition
