@@ -112,27 +112,6 @@ extension OptionsTableViewController: UITableViewDelegate{
                 }
             }
         }
-        
-//        tableView.selectRow(at: <#T##IndexPath?#>, animated: <#T##Bool#>, scrollPosition: <#T##UITableView.ScrollPosition#>)
-//        tableView.reloadData()
-//        let selected = options[indexPath.row]
-//
-//        var indexPathsNeedReload: [IndexPath] = []
-//
-//        if let oldSelectionIndex = options.firstIndex(where: {$0.name == currentOption?.name}) {
-//            indexPathsNeedReload.append(IndexPath(row: oldSelectionIndex, section: 0))
-//        }
-//        currentOption = selected
-//        tableView.reloadRows(at: indexPathsNeedReload + [indexPath], with: .none)
-//
-//        dismiss(animated: true) { [weak self] in
-//            guard let self = self else {return}
-//            if let currentOption = self.currentOption, selected.name == currentOption.name{
-//                self.delegate?.optionsViewController(self, didTapOnSelected: selected)
-//            }else{
-//                self.delegate?.optionsViewController(self, didSelectedNewOption: selected)
-//            }
-//        }
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
