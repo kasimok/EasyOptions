@@ -1,6 +1,6 @@
 import UIKit
 
-class OptionsTableViewCell: UITableViewCell {
+open class OptionsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var leadingImageView: UIImageView!
     
@@ -8,7 +8,7 @@ class OptionsTableViewCell: UITableViewCell {
     
     @IBOutlet weak var trailingImageView: UIImageView!
     
-    func configureCellWith(option: ToolbarOption) {
+    public func configureCellWith(option: ToolbarOption) {
         self.leadingImageView.image = option.icon
         self.label.text = option.name
         self.trailingImageView.image = option.accessoryIcon
