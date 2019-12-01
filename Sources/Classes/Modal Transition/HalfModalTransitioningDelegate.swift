@@ -23,15 +23,15 @@ open class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioni
         super.init()
     }
     
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return HalfModalTransitionAnimator(type: .Dismiss)
     }
     
-    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return HalfModalPresentationController(presentedViewController: presented, presenting: presenting,modalHeight: modalViewHeight, allowPanToMaximise: allowMaximum, wantsBlur: wantsBlurBg)
     }
     
-    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    public func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         if interactiveDismiss {
             return self.interactionController
         }

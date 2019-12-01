@@ -8,7 +8,7 @@ open class HalfModalTransitionAnimator: NSObject, UIViewControllerAnimatedTransi
         self.type = type
     }
     
-    @objc func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    @objc public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let _ = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)
         let from = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)
         
@@ -21,7 +21,7 @@ open class HalfModalTransitionAnimator: NSObject, UIViewControllerAnimatedTransi
         }
     }
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
 }

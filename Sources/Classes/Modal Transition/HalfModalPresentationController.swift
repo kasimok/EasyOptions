@@ -48,7 +48,7 @@ open class HalfModalPresentationController : UIPresentationController {
         presentedViewController.dismiss(animated: true, completion: nil)
     }
     
-    override func containerViewDidLayoutSubviews() {
+    override open func containerViewDidLayoutSubviews() {
         dimmingView.frame = CGRect(x: 0, y: 0, width: containerView!.bounds.width, height: containerView!.bounds.height)
         adjustPresentedViewFrame()
     }
@@ -132,11 +132,11 @@ open class HalfModalPresentationController : UIPresentationController {
         
     }
     
-    override var frameOfPresentedViewInContainerView: CGRect {
+    override open var frameOfPresentedViewInContainerView: CGRect {
         return CGRect(x: 0, y: containerView!.bounds.height - halfHeight, width: containerView!.bounds.width, height: halfHeight)
     }
     
-    override func presentationTransitionWillBegin() {
+    override open func presentationTransitionWillBegin() {
         let dimmedView = dimmingView
         
         if let containerView = self.containerView, let coordinator = presentingViewController.transitionCoordinator {
@@ -153,7 +153,7 @@ open class HalfModalPresentationController : UIPresentationController {
         }
     }
     
-    override func dismissalTransitionWillBegin() {
+    override open func dismissalTransitionWillBegin() {
         if let coordinator = presentingViewController.transitionCoordinator {
             
             coordinator.animate(alongsideTransition: { (context) -> Void in
@@ -165,7 +165,7 @@ open class HalfModalPresentationController : UIPresentationController {
         }
     }
     
-    override func dismissalTransitionDidEnd(_ completed: Bool) {
+    override open func dismissalTransitionDidEnd(_ completed: Bool) {
         if completed {
             dimmingView.removeFromSuperview()
             _dimmingView = nil

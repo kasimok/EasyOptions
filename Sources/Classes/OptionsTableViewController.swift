@@ -3,7 +3,7 @@ import UIKit
 ///A table view controller for display of options
 open class OptionsTableViewController: UIViewController, ToolbarOptionsViewControllerType{
     
-    internal var viewHeight: CGFloat {
+    public var viewHeight: CGFloat {
         get{
             let height = CGFloat(CGFloat(options.count) * toolbarSettingCellHeight)
             if #available(iOS 11.0, *) {
@@ -18,11 +18,11 @@ open class OptionsTableViewController: UIViewController, ToolbarOptionsViewContr
         }
     }
     
-    internal var options: [ToolbarOption] = []
+    public var options: [ToolbarOption] = []
     
     internal var selectedIndexPath: IndexPath?
     
-    internal var currentVC: UIViewController?
+    public var currentVC: UIViewController?
     
     private let kTableViewReusefulIdentifier = "ViewModeOptionsCell"
     

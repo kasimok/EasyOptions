@@ -18,11 +18,11 @@ open class HalfModalInteractiveTransition: UIPercentDrivenInteractiveTransition 
         view.addGestureRecognizer(panGestureRecognizer)
     }
     
-    override func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
+    override open func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {
         super.startInteractiveTransition(transitionContext)
     }
     
-    override var completionSpeed: CGFloat {
+    override open var completionSpeed: CGFloat {
         get {
             return 1.0 - self.percentComplete
         }
