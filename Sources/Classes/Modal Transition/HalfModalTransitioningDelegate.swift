@@ -13,7 +13,7 @@ open class HalfModalTransitioningDelegate: NSObject, UIViewControllerTransitioni
     
     var wantsBlurBg: Bool = false
     
-    init(viewController: UIViewController, presentingViewController: UIViewController, viewHeight heightForModalMode: CGFloat,allowPanToMaximise: Bool, wantsBlurDimmingView: Bool = false) {
+    public init(viewController: UIViewController, presentingViewController: UIViewController, viewHeight heightForModalMode: CGFloat,allowPanToMaximise: Bool, wantsBlurDimmingView: Bool = false) {
         self.viewController = viewController
         self.presentingViewController = presentingViewController
         self.interactionController = HalfModalInteractiveTransition(viewController: self.viewController, withView: self.presentingViewController.view, presentingViewController: self.presentingViewController)
